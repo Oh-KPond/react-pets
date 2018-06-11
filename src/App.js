@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Pet from './components/Pet.js'
 
 const PET_LIST = [
   {
@@ -26,7 +27,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      {/* fill it in!!! */}
+        <Pet
+          name={PET_LIST[0].name}
+          age={PET_LIST[0].age}
+          breed={PET_LIST[0].breed}
+          about={PET_LIST[0].about}
+          />
       </div>
     );
   }
