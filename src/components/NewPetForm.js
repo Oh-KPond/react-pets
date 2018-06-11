@@ -31,7 +31,7 @@ class NewPetForm extends Component {
       age: 0,
       breed: '',
       about: '',
-    })
+    });
   }
 
   onFormSubmit = (event) => {
@@ -50,7 +50,7 @@ class NewPetForm extends Component {
       <form onSubmit={this.onFormSubmit}>
         <div>
           <label htmlFor="name">Name: </label>
-          <input name="name" value={this.state.className}
+          <input name="name" value={this.state.name}
           onChange={this.onFieldChange} type="text"
           />
 
