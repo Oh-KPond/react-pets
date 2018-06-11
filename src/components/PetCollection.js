@@ -15,7 +15,7 @@ class PetCollection extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://petdibs.herokuapp.com/pets')
+    axios.get('https://petdibs.herokuapp.com/pets/')
     .then((response) => {
       this.setState({ pets: response.data });
     })
@@ -52,8 +52,15 @@ class PetCollection extends Component {
   }
 
   render () {
+    let errorMessage
+
+    if (this.state.error) {
+      errorMessage = <p>{this.state.error}</p>
+    }
+
     return (
       <section>
+        {errorMessage}
         {this.renderPetList()}
         <NewPetForm addPetCallback={this.addPet} />
       </section>
