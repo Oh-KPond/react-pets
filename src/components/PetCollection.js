@@ -3,18 +3,31 @@ import PropTypes from 'prop-types';
 import Pet from './Pet';
 import NewPetForm from './NewPetForm';
 
+import axios from 'axios';
+
+
 class PetCollection extends Component {
 
   constructor(props) {
     super(props);
 
-    this.state = {
-      petList: props.petList,
-    }
+    this.state = { pets: [] }
+  }
+
+  componentDidMount() {
+    axios.get('https://petdibs.herokuapp.com/pets')
+    .then((response) => {
+      this.setState({ pets: response.data });
+    })
+    .catch((error) => {
+      this.setState({
+        error: error.message
+      })
+    });
   }
 
   renderPetList = () => {
-    const componentList = this.state.petList.map((pet,index) => {
+    const componentList = this.state.pets.map((pet,index) => {
       return (
         <Pet
           key={index}
@@ -30,11 +43,11 @@ class PetCollection extends Component {
   }
 
   addPet = (pet) => {
-    const petList = this.state.petList;
+    const pets = this.state.pets;
 
-    petList.push(pet);
+    pets.push(pet);
     this.setState({
-      petList,
+      pets,
     })
   }
 
@@ -51,5 +64,5 @@ class PetCollection extends Component {
 export default PetCollection;
 
 PetCollection.propTypes = {
-  petList: PropTypes.array,
+  pets: PropTypes.array,
 }
