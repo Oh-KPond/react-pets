@@ -4,8 +4,9 @@ import Pet from './Pet';
 import NewPetForm from './NewPetForm';
 
 class PetCollection extends Component {
+
   renderPetList = () => {
-    this.props.petList.map((pet,index) => {
+    const componentList = this.props.petList.map((pet,index) => {
       return (
         <Pet
           key={index}
@@ -16,11 +17,14 @@ class PetCollection extends Component {
         />
       );
     });
+
+    return componentList
   }
+  
   render () {
     return (
       <section>
-      {this.renderPetList()}
+        {this.renderPetList()}
       </section>
     )
   }
