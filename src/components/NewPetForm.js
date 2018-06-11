@@ -21,10 +21,33 @@ class NewPetForm extends Component {
     this.setState(updateState);
   }
 
+  valid = () => {
+    return this.state.name.length > 0 && this.state.age > 0;
+  }
+
+  clearForm = () => {
+    this.setState({
+      name: '',
+      age: 0,
+      breed: '',
+      about: '',
+    })
+  }
+
+  onFormSubmit = (event) => {
+    event.preventDefault();
+
+    if (this.valid ()) {
+
+      this.props.addPetCallback(this.state);
+
+      this.clearForm();
+    }
+  }
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.onFormSubmit}>
         <div>
           <label htmlFor="name">Name: </label>
           <input name="name" value={this.state.className}
@@ -46,6 +69,7 @@ class NewPetForm extends Component {
           onChange={this.onFieldChange}
           />
 
+        <input type="submit" value="add Pet" />
         </div>
       </form>
     )
@@ -53,3 +77,7 @@ class NewPetForm extends Component {
 }
 
 export default NewPetForm;
+
+NewPetForm.propTypes = {
+  addPetCallback: PropTypes.func.isRequired,
+};
