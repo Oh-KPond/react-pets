@@ -3,10 +3,14 @@ import PropTypes from 'prop-types';
 
 class Pet extends Component {
 
+
   render () {
     return (
       <article>
-        Pet
+        <h3>Pet {this.props.name}</h3>
+        <p>{this.props.age}</p>
+        <p>{this.props.breed}</p>
+        <p>{this.props.about}</p>
       </article>
     )
   }
