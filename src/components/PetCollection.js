@@ -20,11 +20,12 @@ class PetCollection extends Component {
 
     return componentList
   }
-  
+
   render () {
     return (
       <section>
         {this.renderPetList()}
+        <NewPetForm />
       </section>
     )
   }
