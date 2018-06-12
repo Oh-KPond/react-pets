@@ -3,7 +3,9 @@
 exports[`NewPetForm that it matches an existing snapshot 1`] = `
 ReactWrapper {
   "length": 1,
-  Symbol(enzyme.__unrendered__): <NewPetForm />,
+  Symbol(enzyme.__unrendered__): <NewPetForm
+    addPetCallback={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -33,19 +35,25 @@ ReactWrapper {
           "memoizedProps": Object {
             "Component": [Function],
             "context": null,
-            "props": Object {},
+            "props": Object {
+              "addPetCallback": [Function],
+            },
           },
           "memoizedState": Object {
             "context": null,
             "mount": true,
-            "props": Object {},
+            "props": Object {
+              "addPetCallback": [Function],
+            },
           },
           "mode": 0,
           "nextEffect": null,
           "pendingProps": Object {
             "Component": [Function],
             "context": null,
-            "props": Object {},
+            "props": Object {
+              "addPetCallback": [Function],
+            },
           },
           "ref": null,
           "return": FiberNode {
@@ -158,7 +166,11 @@ ReactWrapper {
                     "element": <WrapperComponent
                       Component={[Function]}
                       context={null}
-                      props={Object {}}
+                      props={
+                                            Object {
+                                                                  "addPetCallback": [Function],
+                                                                }
+                      }
 />,
                   },
                   "tag": 0,
@@ -175,7 +187,11 @@ ReactWrapper {
                     "element": <WrapperComponent
                       Component={[Function]}
                       context={null}
-                      props={Object {}}
+                      props={
+                                            Object {
+                                                                  "addPetCallback": [Function],
+                                                                }
+                      }
 />,
                   },
                   "tag": 0,
@@ -194,7 +210,11 @@ ReactWrapper {
               "element": <WrapperComponent
                 Component={[Function]}
                 context={null}
-                props={Object {}}
+                props={
+                                Object {
+                                                "addPetCallback": [Function],
+                                              }
+                }
 />,
             },
             "mode": 0,
@@ -277,7 +297,11 @@ ReactWrapper {
                 "element": <WrapperComponent
                   Component={[Function]}
                   context={null}
-                  props={Object {}}
+                  props={
+                                    Object {
+                                                      "addPetCallback": [Function],
+                                                    }
+                  }
 />,
               },
               "expirationTime": 0,
@@ -300,13 +324,17 @@ ReactWrapper {
             "props": Object {
               "Component": [Function],
               "context": null,
-              "props": Object {},
+              "props": Object {
+                "addPetCallback": [Function],
+              },
             },
             "refs": Object {},
             "state": Object {
               "context": null,
               "mount": true,
-              "props": Object {},
+              "props": Object {
+                "addPetCallback": [Function],
+              },
             },
             "updater": Object {
               "enqueueForceUpdate": [Function],
@@ -1050,7 +1078,9 @@ ReactWrapper {
         "index": 0,
         "key": null,
         "lastEffect": null,
-        "memoizedProps": Object {},
+        "memoizedProps": Object {
+          "addPetCallback": [Function],
+        },
         "memoizedState": Object {
           "about": "",
           "age": 0,
@@ -1059,7 +1089,9 @@ ReactWrapper {
         },
         "mode": 0,
         "nextEffect": null,
-        "pendingProps": Object {},
+        "pendingProps": Object {
+          "addPetCallback": [Function],
+        },
         "ref": null,
         "return": FiberNode {
           "_debugID": 4,
@@ -1077,19 +1109,25 @@ ReactWrapper {
           "memoizedProps": Object {
             "Component": [Function],
             "context": null,
-            "props": Object {},
+            "props": Object {
+              "addPetCallback": [Function],
+            },
           },
           "memoizedState": Object {
             "context": null,
             "mount": true,
-            "props": Object {},
+            "props": Object {
+              "addPetCallback": [Function],
+            },
           },
           "mode": 0,
           "nextEffect": null,
           "pendingProps": Object {
             "Component": [Function],
             "context": null,
-            "props": Object {},
+            "props": Object {
+              "addPetCallback": [Function],
+            },
           },
           "ref": null,
           "return": FiberNode {
@@ -1202,7 +1240,11 @@ ReactWrapper {
                     "element": <WrapperComponent
                       Component={[Function]}
                       context={null}
-                      props={Object {}}
+                      props={
+                                            Object {
+                                                                  "addPetCallback": [Function],
+                                                                }
+                      }
 />,
                   },
                   "tag": 0,
@@ -1219,7 +1261,11 @@ ReactWrapper {
                     "element": <WrapperComponent
                       Component={[Function]}
                       context={null}
-                      props={Object {}}
+                      props={
+                                            Object {
+                                                                  "addPetCallback": [Function],
+                                                                }
+                      }
 />,
                   },
                   "tag": 0,
@@ -1238,7 +1284,11 @@ ReactWrapper {
               "element": <WrapperComponent
                 Component={[Function]}
                 context={null}
-                props={Object {}}
+                props={
+                                Object {
+                                                "addPetCallback": [Function],
+                                              }
+                }
 />,
             },
             "mode": 0,
@@ -1321,7 +1371,11 @@ ReactWrapper {
                 "element": <WrapperComponent
                   Component={[Function]}
                   context={null}
-                  props={Object {}}
+                  props={
+                                    Object {
+                                                      "addPetCallback": [Function],
+                                                    }
+                  }
 />,
               },
               "expirationTime": 0,
@@ -1344,13 +1398,17 @@ ReactWrapper {
             "props": Object {
               "Component": [Function],
               "context": null,
-              "props": Object {},
+              "props": Object {
+                "addPetCallback": [Function],
+              },
             },
             "refs": Object {},
             "state": Object {
               "context": null,
               "mount": true,
-              "props": Object {},
+              "props": Object {
+                "addPetCallback": [Function],
+              },
             },
             "updater": Object {
               "enqueueForceUpdate": [Function],
@@ -1377,7 +1435,9 @@ ReactWrapper {
       "context": Object {},
       "onFieldChange": [Function],
       "onFormSubmit": [Function],
-      "props": Object {},
+      "props": Object {
+        "addPetCallback": [Function],
+      },
       "refs": Object {},
       "state": Object {
         "about": "",
@@ -1395,7 +1455,9 @@ ReactWrapper {
     },
     "key": undefined,
     "nodeType": "class",
-    "props": Object {},
+    "props": Object {
+      "addPetCallback": [Function],
+    },
     "ref": null,
     "rendered": Object {
       "instance": <form>
@@ -1796,19 +1858,25 @@ ReactWrapper {
             "memoizedProps": Object {
               "Component": [Function],
               "context": null,
-              "props": Object {},
+              "props": Object {
+                "addPetCallback": [Function],
+              },
             },
             "memoizedState": Object {
               "context": null,
               "mount": true,
-              "props": Object {},
+              "props": Object {
+                "addPetCallback": [Function],
+              },
             },
             "mode": 0,
             "nextEffect": null,
             "pendingProps": Object {
               "Component": [Function],
               "context": null,
-              "props": Object {},
+              "props": Object {
+                "addPetCallback": [Function],
+              },
             },
             "ref": null,
             "return": FiberNode {
@@ -1921,7 +1989,11 @@ ReactWrapper {
                       "element": <WrapperComponent
                         Component={[Function]}
                         context={null}
-                        props={Object {}}
+                        props={
+                                                Object {
+                                                                        "addPetCallback": [Function],
+                                                                      }
+                        }
 />,
                     },
                     "tag": 0,
@@ -1938,7 +2010,11 @@ ReactWrapper {
                       "element": <WrapperComponent
                         Component={[Function]}
                         context={null}
-                        props={Object {}}
+                        props={
+                                                Object {
+                                                                        "addPetCallback": [Function],
+                                                                      }
+                        }
 />,
                     },
                     "tag": 0,
@@ -1957,7 +2033,11 @@ ReactWrapper {
                 "element": <WrapperComponent
                   Component={[Function]}
                   context={null}
-                  props={Object {}}
+                  props={
+                                    Object {
+                                                      "addPetCallback": [Function],
+                                                    }
+                  }
 />,
               },
               "mode": 0,
@@ -2040,7 +2120,11 @@ ReactWrapper {
                   "element": <WrapperComponent
                     Component={[Function]}
                     context={null}
-                    props={Object {}}
+                    props={
+                                        Object {
+                                                            "addPetCallback": [Function],
+                                                          }
+                    }
 />,
                 },
                 "expirationTime": 0,
@@ -2063,13 +2147,17 @@ ReactWrapper {
               "props": Object {
                 "Component": [Function],
                 "context": null,
-                "props": Object {},
+                "props": Object {
+                  "addPetCallback": [Function],
+                },
               },
               "refs": Object {},
               "state": Object {
                 "context": null,
                 "mount": true,
-                "props": Object {},
+                "props": Object {
+                  "addPetCallback": [Function],
+                },
               },
               "updater": Object {
                 "enqueueForceUpdate": [Function],
@@ -2813,7 +2901,9 @@ ReactWrapper {
           "index": 0,
           "key": null,
           "lastEffect": null,
-          "memoizedProps": Object {},
+          "memoizedProps": Object {
+            "addPetCallback": [Function],
+          },
           "memoizedState": Object {
             "about": "",
             "age": 0,
@@ -2822,7 +2912,9 @@ ReactWrapper {
           },
           "mode": 0,
           "nextEffect": null,
-          "pendingProps": Object {},
+          "pendingProps": Object {
+            "addPetCallback": [Function],
+          },
           "ref": null,
           "return": FiberNode {
             "_debugID": 4,
@@ -2840,19 +2932,25 @@ ReactWrapper {
             "memoizedProps": Object {
               "Component": [Function],
               "context": null,
-              "props": Object {},
+              "props": Object {
+                "addPetCallback": [Function],
+              },
             },
             "memoizedState": Object {
               "context": null,
               "mount": true,
-              "props": Object {},
+              "props": Object {
+                "addPetCallback": [Function],
+              },
             },
             "mode": 0,
             "nextEffect": null,
             "pendingProps": Object {
               "Component": [Function],
               "context": null,
-              "props": Object {},
+              "props": Object {
+                "addPetCallback": [Function],
+              },
             },
             "ref": null,
             "return": FiberNode {
@@ -2965,7 +3063,11 @@ ReactWrapper {
                       "element": <WrapperComponent
                         Component={[Function]}
                         context={null}
-                        props={Object {}}
+                        props={
+                                                Object {
+                                                                        "addPetCallback": [Function],
+                                                                      }
+                        }
 />,
                     },
                     "tag": 0,
@@ -2982,7 +3084,11 @@ ReactWrapper {
                       "element": <WrapperComponent
                         Component={[Function]}
                         context={null}
-                        props={Object {}}
+                        props={
+                                                Object {
+                                                                        "addPetCallback": [Function],
+                                                                      }
+                        }
 />,
                     },
                     "tag": 0,
@@ -3001,7 +3107,11 @@ ReactWrapper {
                 "element": <WrapperComponent
                   Component={[Function]}
                   context={null}
-                  props={Object {}}
+                  props={
+                                    Object {
+                                                      "addPetCallback": [Function],
+                                                    }
+                  }
 />,
               },
               "mode": 0,
@@ -3084,7 +3194,11 @@ ReactWrapper {
                   "element": <WrapperComponent
                     Component={[Function]}
                     context={null}
-                    props={Object {}}
+                    props={
+                                        Object {
+                                                            "addPetCallback": [Function],
+                                                          }
+                    }
 />,
                 },
                 "expirationTime": 0,
@@ -3107,13 +3221,17 @@ ReactWrapper {
               "props": Object {
                 "Component": [Function],
                 "context": null,
-                "props": Object {},
+                "props": Object {
+                  "addPetCallback": [Function],
+                },
               },
               "refs": Object {},
               "state": Object {
                 "context": null,
                 "mount": true,
-                "props": Object {},
+                "props": Object {
+                  "addPetCallback": [Function],
+                },
               },
               "updater": Object {
                 "enqueueForceUpdate": [Function],
@@ -3140,7 +3258,9 @@ ReactWrapper {
         "context": Object {},
         "onFieldChange": [Function],
         "onFormSubmit": [Function],
-        "props": Object {},
+        "props": Object {
+          "addPetCallback": [Function],
+        },
         "refs": Object {},
         "state": Object {
           "about": "",
@@ -3158,7 +3278,9 @@ ReactWrapper {
       },
       "key": undefined,
       "nodeType": "class",
-      "props": Object {},
+      "props": Object {
+        "addPetCallback": [Function],
+      },
       "ref": null,
       "rendered": Object {
         "instance": <form>
