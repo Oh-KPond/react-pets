@@ -19,6 +19,6 @@
     "enzyme-adapter-react-16": "^1.1.1"
   },
   "jest": {
-    "snapshotSerializer": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
