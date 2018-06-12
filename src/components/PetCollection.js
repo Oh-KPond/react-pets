@@ -45,10 +45,19 @@ class PetCollection extends Component {
   addPet = (pet) => {
     const pets = this.state.pets;
 
-    pets.push(pet);
-    this.setState({
-      pets,
-    })
+    axios.post('https://petdibs.herokuapp.com/pets/',pet)
+      .then((response) => {
+        pets.push(pet);
+        this.setState({
+          pets,
+          message: `Successfully Added ${pet.name}` // for a jsx message peice at the top in another setState maybe
+        });
+      })
+      .catch((error) => {
+        this.setState({
+          error: error.message
+        })
+      })
   }
 
   render () {
@@ -58,9 +67,17 @@ class PetCollection extends Component {
       errorMessage = <p>{this.state.error}</p>
     }
 
+    let message
+
+    if (this.state.message) {
+      message = <p>{this.state.message}</p>
+    }
+
+
     return (
       <section>
         {errorMessage}
+        {message}
         {this.renderPetList()}
         <NewPetForm addPetCallback={this.addPet} />
       </section>
